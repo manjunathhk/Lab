@@ -1,0 +1,42 @@
+﻿.appFont {
+  font-family: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+h1 {
+  font-family: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+}
+body {
+  font-family: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #456306;
+  }
+}
+.site {
+  padding: 10px;
+}
+.siteHeader {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #012345;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.siteContent {
+  padding: 10px;
+  border: 2px solid silver;
+}
+.siteFooter {
+  font-size: 9px;
+}
+/*# sourceMappingURL=appstyles.css.map */
