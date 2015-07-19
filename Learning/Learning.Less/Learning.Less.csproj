@@ -63,6 +63,18 @@
     <Content Include="css\appstyles.min.css">
       <DependentUpon>appstyles.css</DependentUpon>
     </Content>
+    <Content Include="css\buttons.css">
+      <DependentUpon>buttons.less</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.min.css">
+      <DependentUpon>buttons.css</DependentUpon>
+    </Content>
+    <Content Include="css\links.css">
+      <DependentUpon>links.less</DependentUpon>
+    </Content>
+    <Content Include="css\links.min.css">
+      <DependentUpon>links.css</DependentUpon>
+    </Content>
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -73,6 +85,14 @@
     <Content Include="css\appstyles.less" />
     <Content Include="css\appstyles.css.map">
       <DependentUpon>appstyles.css</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.less" />
+    <Content Include="css\buttons.css.map">
+      <DependentUpon>buttons.css</DependentUpon>
+    </Content>
+    <Content Include="css\links.less" />
+    <Content Include="css\links.css.map">
+      <DependentUpon>links.css</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
