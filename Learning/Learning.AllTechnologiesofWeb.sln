@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Less", "Learning.Less\Learning.Less.csproj", "{D673613D-3AA6-4975-B1EA-8A69D961FF8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Angular", "Learning.Angular\Learning.Angular.csproj", "{5DD3FD98-7AE1-4C24-9642-F1E1CB8699B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Bootstrap", "Learning.Bootstrap\Learning.Bootstrap.csproj", "{72C34EC8-6C36-4DE9-9C89-56DF3FF36EBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D673613D-3AA6-4975-B1EA-8A69D961FF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D673613D-3AA6-4975-B1EA-8A69D961FF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D673613D-3AA6-4975-B1EA-8A69D961FF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD3FD98-7AE1-4C24-9642-F1E1CB8699B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD3FD98-7AE1-4C24-9642-F1E1CB8699B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD3FD98-7AE1-4C24-9642-F1E1CB8699B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD3FD98-7AE1-4C24-9642-F1E1CB8699B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C34EC8-6C36-4DE9-9C89-56DF3FF36EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C34EC8-6C36-4DE9-9C89-56DF3FF36EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C34EC8-6C36-4DE9-9C89-56DF3FF36EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C34EC8-6C36-4DE9-9C89-56DF3FF36EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

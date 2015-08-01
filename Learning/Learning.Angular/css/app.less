@@ -1,0 +1,24 @@
+﻿@defaultBackground: #fff;
+@mobileBackground: #456306;
+@fontColor: #000;
+@fontSize: 12px;
+@borderRadius: 4px;
+@defaultFontFamily: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+@siteMargin: 10px 15px 15px 10px;
+
+.appFont{
+    font-family: @defaultFontFamily;
+    font-size:@fontSize;
+    color:@fontColor;
+}
+
+body {
+    .appFont;
+    background-color:@defaultBackground;
+
+    @media screen{
+        @media (max-width: 768px){
+            background-color:@mobileBackground;
+        }
+    }
+}

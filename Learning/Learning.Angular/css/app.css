@@ -1,0 +1,17 @@
+﻿.appFont {
+  font-family: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+body {
+  font-family: Verdana, Tahoma, 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #456306;
+  }
+}
+/*# sourceMappingURL=app.css.map */
