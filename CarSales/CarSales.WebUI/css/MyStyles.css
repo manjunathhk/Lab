@@ -1,0 +1,30 @@
+﻿body {
+  font-family: Calibri, Verdana, Tahoma, Calibri, Arial, Sans-Serif;
+  font-size: 14px;
+  margin: 5px;
+}
+header {
+  font-size: 18px;
+  background-color: #6d6cc6;
+  color: white;
+  border-radius: 8px 8px 0px 0px;
+  padding: 10px;
+}
+#viewport {
+  min-height: 50px;
+  border-left: 2px solid #6d6cc6;
+  border-right: 2px solid #6d6cc6;
+}
+footer {
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #6d6cc6;
+  color: white;
+  border-radius: 0px 0px 8px 8px;
+  padding: 10px;
+}
+p {
+  color: red;
+}
+/*# sourceMappingURL=MyStyles.css.map */

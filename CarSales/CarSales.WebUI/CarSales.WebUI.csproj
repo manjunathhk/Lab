@@ -57,6 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\MyStyles.css">
+      <DependentUpon>MyStyles.less</DependentUpon>
+    </Content>
+    <Content Include="css\MyStyles.less" />
+    <Content Include="css\MyStyles.css.map">
+      <DependentUpon>MyStyles.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,6 +72,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\MyStyles.min.css">
+      <DependentUpon>MyStyles.css</DependentUpon>
+    </Content>
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
