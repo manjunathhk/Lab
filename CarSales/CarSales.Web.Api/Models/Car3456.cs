@@ -1,6 +1,6 @@
 ﻿namespace CarSales.Web.Api.Models
 {
-    public class Car
+    public class Car3456
     {
         public string Brand { get; set; }
         

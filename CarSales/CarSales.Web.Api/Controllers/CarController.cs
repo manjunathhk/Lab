@@ -1,75 +1,73 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Web.Http;
-using CarSales.Web.Api.Models;
+using CarSales.Dal;
+using CarSales.Dal.Interfaces;
+using CarSales.Models;
 
 namespace CarSales.Web.Api.Controllers
 {
-    //[Route("api/car/")]
-    //[RoutePrefix("car")]
+    //[RoutePrefix("api/car")]
     public class CarController : ApiController
     {
-        private readonly IList<Car> cars;
+        private readonly ICarData carData;
         public CarController()
         {
-            cars = new List<Car>
-            {
-                new Car {Brand = "Hyundai", Model = "i10", MaxSpeed = 160, Torque = 10, Variant = "Era"},
-                new Car {Brand = "Hyundai", Model = "i10", MaxSpeed = 160, Torque = 10, Variant = "Magna"},
-                new Car {Brand = "Hyundai", Model = "i10", MaxSpeed = 160, Torque = 10, Variant = "Sportz"},
-                new Car {Brand = "Hyundai", Model = "i10", MaxSpeed = 160, Torque = 10, Variant = "Asta"},
-                new Car {Brand = "Hyundai", Model = "i20", MaxSpeed = 160, Torque = 10, Variant = "Era"},
-                new Car {Brand = "Hyundai", Model = "i20", MaxSpeed = 160, Torque = 10, Variant = "Magna"},
-                new Car {Brand = "Hyundai", Model = "i20", MaxSpeed = 160, Torque = 10, Variant = "Sportz"},
-                new Car {Brand = "Hyundai", Model = "i20", MaxSpeed = 160, Torque = 10, Variant = "Asta"},
-                new Car {Brand = "Maruthi", Model = "Ertiga", MaxSpeed = 140, Torque = 8, Variant = "LXi"},
-                new Car {Brand = "Maruthi", Model = "Ertiga", MaxSpeed = 140, Torque = 8, Variant = "VXi"},
-                new Car {Brand = "Maruthi", Model = "Ertiga", MaxSpeed = 140, Torque = 8, Variant = "ZXi"}
-            };
+            carData = new CarData();
         }
-        // GET: api/Car
+        // HttpMethod = GET
+        // Example Usage: /api/car/
         public IList<Car> Get()
         {
-            return cars;
+            return GetAll();
         }
-
-        // GET: api/Car/5
-        [Route("api/car/{brand}")]
-        //[Route("{brand}")]
-        public IList<Car> Get(string brand)
+        // HttpMethod = GET
+        // Example Usage: /api/car
+        // Example Usage: /api/car/GetAll
+        public IList<Car> GetAll()
         {
-            IList<Car> carList = (from car in cars
-                where car.Brand.Equals(brand, StringComparison.InvariantCultureIgnoreCase)
-                select car).ToList();
-
-            return carList;
+            return carData.GetAll();
         }
 
-        [Route("api/car/{brand}/{model}")]
-        //[Route("{brand}/{model}")]
-        public IList<Car> Get(string brand, string model)
+        // HttpMethod = GET
+        // Example Usage: /api/car/GetByManufacturer?manufacturer=name
+        public IList<Car> GetByManufacturer(string manufacturer)
         {
-            IList<Car> carList = (from car in cars
-                                  where car.Brand.Equals(brand, StringComparison.InvariantCultureIgnoreCase) && car.Model.Equals(model, StringComparison.InvariantCultureIgnoreCase)
-                                  select car).ToList();
-
-            return carList;
+            return carData.GetByManufacturer(manufacturer);
         }
 
-        // POST: api/Car
-        public void Post([FromBody]string value)
+        // HttpMethod = GET
+        // Example Usage: /api/car/<number>
+        public Car GetById(decimal id)
         {
+            return carData.GetById(id);
         }
 
-        // PUT: api/Car/5
-        public void Put(int id, [FromBody]string value)
+        // HttpMethod = POST
+        // Example: /api/car/Add
+        // Content-Type: application/json; charset=UTF-8
+        // Possible RequestBody: {"Manufacturer":"Honda","FuelType":"Diese","Variant":"CVX","Torque":10.0,"MaxSpeed":160.0,"Id":-1.0,"Name":"Amaze"}
+        public decimal Add([FromBody] Car car)
         {
+            return carData.Add(car);
         }
 
-        // DELETE: api/Car/5
-        public void Delete(int id)
+        // HttpMethod = POST
+        // Example: /api/car/Update
+        // Content-Type: application/json; charset=UTF-8
+        // Possible RequestBody: {"Manufacturer":"Honda","FuelType":"Diese","Variant":"CVX","Torque":10.0,"MaxSpeed":160.0,"Id":-1.0,"Name":"Amaze"}
+        public bool Update([FromBody] Car car)
         {
+            return carData.Update(car);
         }
+
+        [HttpDelete]
+        // HttpMethod = DELETE
+        // Example: /api/car/<number>
+        // Content-Type: application/json; charset=UTF-8
+        public bool RemoveById(decimal id)
+        {
+            return carData.RemoveById(id);
+        }
+       
     }
 }
