@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using CarSales.Dal.Interfaces.Base;
+﻿using CarSales.Dal.Interfaces.Base;
 using CarSales.Models;
+using System.Collections.Generic;
 
 namespace CarSales.Dal.Interfaces
 {

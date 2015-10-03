@@ -1,8 +1,8 @@
-﻿using System;
+﻿using CarSales.Dal.Interfaces;
+using CarSales.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using CarSales.Dal.Interfaces;
-using CarSales.Models;
 
 namespace CarSales.Dal
 {

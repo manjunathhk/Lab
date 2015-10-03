@@ -42,9 +42,13 @@
     $(document).ready(function () {
         $("#carContainer").hide();
         $.ajax({
-            url: "http://localhost:2801/api/car",
+            url: "http://localhost:2801/api/car123",
             success: function(result) {
                 $("#carTemplate").tmpl(result).appendTo("#carContainerTableBody");
+                $("#carContainer").show();
+            },
+            error: function(exception) {
+                $("#carContainer").html(exception.responseJSON.Message);
                 $("#carContainer").show();
             }
         });

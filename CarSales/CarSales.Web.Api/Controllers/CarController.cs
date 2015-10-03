@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
-using CarSales.Dal;
+﻿using CarSales.Dal;
 using CarSales.Dal.Interfaces;
 using CarSales.Models;
+using System.Collections.Generic;
+using System.Web.Http;
 
 namespace CarSales.Web.Api.Controllers
 {

@@ -9,7 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Models", "CarSales
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Dal", "CarSales.Dal\CarSales.Dal.csproj", "{0E62D721-CC5A-4A32-9F3A-563919CB77EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI", "CarSales.WebUI\CarSales.WebUI.csproj", "{098EEBA2-D41C-4096-8863-8F143023EC44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI.jQuery", "CarSales.WebUI\CarSales.WebUI.jQuery.csproj", "{098EEBA2-D41C-4096-8863-8F143023EC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI.Angular", "CarSales.WebUI.Angular\CarSales.WebUI.Angular.csproj", "{D7BAE3FE-C365-4AD1-BAA5-C7225D5F0F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI.Kendo", "CarSales.WebUI.Kendo\CarSales.WebUI.Kendo.csproj", "{AD1884B4-04D1-4519-B58F-CFBA41A0B5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI.MVC4", "CarSales.WebUI.MVC4\CarSales.WebUI.MVC4.csproj", "{6C1D0C6B-CAB7-4DC9-A39C-0BE0CB8F23A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebUI.WebForms", "CarSales.WebUI.WebForms\CarSales.WebUI.WebForms.csproj", "{88484E2C-79F3-4495-905E-FCEEAC712213}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{098EEBA2-D41C-4096-8863-8F143023EC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{098EEBA2-D41C-4096-8863-8F143023EC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{098EEBA2-D41C-4096-8863-8F143023EC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BAE3FE-C365-4AD1-BAA5-C7225D5F0F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BAE3FE-C365-4AD1-BAA5-C7225D5F0F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BAE3FE-C365-4AD1-BAA5-C7225D5F0F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BAE3FE-C365-4AD1-BAA5-C7225D5F0F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1884B4-04D1-4519-B58F-CFBA41A0B5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1884B4-04D1-4519-B58F-CFBA41A0B5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1884B4-04D1-4519-B58F-CFBA41A0B5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1884B4-04D1-4519-B58F-CFBA41A0B5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1D0C6B-CAB7-4DC9-A39C-0BE0CB8F23A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1D0C6B-CAB7-4DC9-A39C-0BE0CB8F23A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1D0C6B-CAB7-4DC9-A39C-0BE0CB8F23A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1D0C6B-CAB7-4DC9-A39C-0BE0CB8F23A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88484E2C-79F3-4495-905E-FCEEAC712213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88484E2C-79F3-4495-905E-FCEEAC712213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88484E2C-79F3-4495-905E-FCEEAC712213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88484E2C-79F3-4495-905E-FCEEAC712213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

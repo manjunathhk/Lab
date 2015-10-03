@@ -1,0 +1,42 @@
+﻿@fontFamily: Calibri, Verdana, Tahoma, Calibri, Arial, Sans-Serif;
+@fontSize: 14px;
+
+@theme-color:#6d6cc6;
+@border-radius:8px;
+@no-border-radius:0px;
+@overlap-color: white;
+
+body {
+    font-family: @fontFamily;
+    font-size:@fontSize;
+    margin:5px;
+}
+
+header{
+    font-size:@fontSize + 4;
+    background-color:@theme-color;
+    color:@overlap-color;
+    border-radius:@border-radius @border-radius @no-border-radius @no-border-radius;
+    padding:10px;
+}
+
+#viewport{
+    min-height:50px;
+    //height:99px;
+    border-left:2px solid @theme-color;
+    border-right:2px solid @theme-color;
+}
+
+footer{
+    font-size:@fontSize - 2;
+    vertical-align:middle;
+    text-align:center;
+    background-color:@theme-color;
+    color:@overlap-color;
+    border-radius:@no-border-radius @no-border-radius @border-radius @border-radius;
+    padding:10px;
+}
+
+p{
+    color:red;
+}
