@@ -14,8 +14,9 @@ namespace Learning.WcfService.Services
 
         public Product GetAll()
         {
-            throw new FaultException("There was a problem in the service.");
-            // return new Product {Id = 1, Name = "Visual Studio 2015"};
+            return new Product {Id = 1, Name = "Visual Studio 2015"};
+            // If any exception to be thrown, use FaultException("Error Message");
+            // throw new FaultException("There was a problem in the service.");
         }
     }
 }
